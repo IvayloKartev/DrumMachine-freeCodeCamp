@@ -1,0 +1,185 @@
+body{
+    margin: 0; 
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+.back {
+    width: 100vw;
+    height: 100vh;
+    background-color: #8d8d8d;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "Russo One";
+}
+#drum-machine {
+    width: 34.75vw;
+    height: 38vh;
+    background-color: #b3b3b3;
+    border: 5px solid #ffa500;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+
+}
+.drum-pad {
+    width: 6.5rem;
+    height: 5rem;
+    background-color: #808080;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.drum-pads {
+    width: 50%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    row-gap: 7.5px;
+    column-gap: 7.5px;
+}
+.controls {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding-top: 20px;
+}
+.power {
+    width: 3.5rem;
+    height: 1.5rem;
+    background-color: black;
+    overflow: hidden;
+    padding: 2px;
+    margin: 0;
+    display: flex;
+    justify-content:flex-start;
+}
+#switch {
+    height: 1.25rem;
+    width: 1.5rem;
+    background-color: #0000ff;
+}
+.power-label {
+    margin: 0;
+}
+#display {
+    width: 85%;
+    height: 3rem;
+    background-color: #808080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+#lever {
+    width: 95%;
+    height: 1.25rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.stick {
+    width: 105%;
+    height: 0.5rem;
+    background-color: #424242;
+}
+#pull {
+    appearance: none;
+    background: transparent;
+    width: 105%;
+}
+#pull::-moz-range-track{
+    width: 105%;
+    height: 0.5rem;
+    background-color: #424242;
+}
+#pull::-webkit-slider-runnable-track{
+    width: 105%;
+    height: 0.5rem;
+    background-color: #424242;
+}
+#pull::-moz-range-thumb{
+    appearance: none;
+    margin-top: -12px;
+    background-color: #0000ff;
+    height: 2rem;
+    width: 1rem;    
+    border-radius: 0;
+    border: none;
+}
+#pull::-webkit-slider-thumb{
+    appearance: none;
+    margin-top: -12px;
+    background-color: #0000ff;
+    height: 2rem;
+    width: 1rem;    
+    border-radius: 0;
+    border: none;
+}
+.bank-switch {
+    width: 3.5rem;
+    height: 1.5rem;
+    background-color: black;
+    overflow: hidden;
+    padding: 2px;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+.bank-label {
+    margin: 0;
+}
+.drum-pad:active{
+    box-shadow: none;   
+}
+@media only screen and (max-width: 550px){
+    #drum-machine {
+        width: 90vw;
+        height: auto;
+        background-color: #b3b3b3;
+        border: 5px solid #ffa500;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;  
+    }
+    .drum-pad {
+        width: 3.9rem;
+        height: 3rem;
+        background-color: #808080;
+        border-radius: 5px;
+        box-shadow: 2px 2px 3px black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .drum-pads {
+        width: 90%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        row-gap: 7.5px;
+        column-gap: 7.5px;
+        justify-content: center;
+    }
+    .controls {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        padding-top: 20px;
+    }
+}

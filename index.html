@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum machine</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="back">
+        <section id="drum-machine">
+            <div class="drum-pads">
+                <div class="drum-pad" id="Heater-1">
+                    <span>Q</span>
+                    <audio id="Q" class="clip" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3">
+                    </audio>
+                </div>
+                <div class="drum-pad" id="Heater-2"><span>W</span>
+                    <audio id="W" class="clip" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3">
+                    </audio>
+                </div>
+                <div class="drum-pad" id="Heater-3"><span>E</span>
+                    <audio id="E" class="clip" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3">
+                    </audio></div>
+                <div class="drum-pad" id="Heater-4"><span>A</span>
+                    <audio id="A" class="clip" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3">
+                    </audio></div>
+                <div class="drum-pad" id="Clap"><span>S</span>
+                    <audio id="S" class="clip" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3">
+                    </audio></div>
+                <div class="drum-pad" id="Open-HH"><span>D</span>
+                    <audio id="D" class="clip" src="https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3">
+                    </audio></div>
+                <div class="drum-pad" id="Kick'n-hat"><span>Z</span>
+                    <audio id="Z" class="clip" src="https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3">
+                    </audio></div>
+                <div class="drum-pad" id="Kick"><span>X</span>
+                    <audio id="X" class="clip" src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3">
+                    </audio>
+                </div>
+                <div class="drum-pad" id="Closed-HH"><span>C</span>
+                    <audio id="C" class="clip" src="https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3">
+                    </audio></div>
+                </div>
+            <div class="controls">
+                <div class="onoff">
+                    <p class="power-label">Power</p>
+                    <div class="power" id="power">
+                        <div id="switch"></div>
+                    </div>
+                </div>
+                <div id="display">
+                    <p id="record"></p>
+                </div>
+                <div id="lever">
+                    <input id="pull" type="range" min="0" max="100">
+                </div>
+                <div class="bank">
+                    <p class="bank-label">Bank</p>
+                    <div class="bank-switch">
+                        <div id="switch"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
